@@ -47,6 +47,7 @@ end;
 procedure TForm1.Timer1StartTimer(Sender: TObject);
 begin
   hb_record := TStringList.Create();
+  Cursor := crNone;
 end;
 
 procedure TForm1.Timer1Timer(Sender: TObject);

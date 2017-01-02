@@ -13,7 +13,8 @@ class heartMonitor:
         try:
             self.p = btle.Peripheral(mac)
             self.p.setDelegate(heartDelegate())
-        except:
+        except Exception as e:
+            print str(e)
             self.p = 0
             print "Not connected"
 
@@ -63,11 +64,14 @@ hrm.startMonitor()
 while True:
     sleep(1) # Need this to slow the changes down
     try:
-        hb = int(hrm.getHeartbeat())
-        with open('hb.txt', 'w') as f:
-            f.write('{}'.format(hb))
-    except:
-        hrm = heartMonitor("00:22:D0:2C:13:7E")
-        hrm.startMonitor()
+        read = hrm.getHeartbeat()
+        hb = int(read)
+        if hb != 0:
+            with open('/home/pi/hb.txt', 'w') as f:
+                f.write('{}'.format(hb))
+    except Exception as e:
+        if read != "Booting":
+            hrm = heartMonitor("00:22:D0:2C:13:7E")
+            hrm.startMonitor()
         continue
     

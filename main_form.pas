@@ -38,7 +38,7 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  hb_record.SaveToFile('last_run.txt');
+  hb_record.SaveToFile(IntToStr(DateTimeToUnix(Now()))+'_run.txt');
   Chart1LineSeries1.Clear();
   hb_record.Clear();
   Application.ProcessMessages();
