@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1413850856"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -vewnhi -Fi/home/pi/HB_PROJECT/lib/arm-linux -Fl/opt/gnome/lib -Fu/usr/lib/lazarus/1.2.4/components/tachart/lib/arm-linux/gtk2 -Fu/usr/lib/lazarus/1.2.4/components/ideintf/units/arm-linux/gtk2 -Fu/usr/lib/lazarus/1.2.4/components/lazcontrols/lib/arm-linux/gtk2 -Fu/usr/lib/lazarus/1.2.4/lcl/units/arm-linux/gtk2 -Fu/usr/lib/lazarus/1.2.4/lcl/units/arm-linux -Fu/usr/lib/lazarus/1.2.4/components/lazutils/lib/arm-linux -Fu/usr/lib/lazarus/1.2.4/packager/units/arm-linux -Fu/home/pi/HB_PROJECT/ -FU/home/pi/HB_PROJECT/lib/arm-linux/ -l -dLCL -dLCLgtk2 hb_project.lpr"/>
+</CONFIG>
