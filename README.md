@@ -1,9 +1,12 @@
 # hbpimon
 This is a real-time heart-beat monitoring application intended for use with a raspberry-pi 3 and a Polar H7 heart-beat sensor. Heart beats are recorded using the hb.py script into a txt file and these values are then read and graphed in realtime by the Lazarus application hb_project.
 
-To run this application make sure you intall bluepy and tendo using pip:
+To run this application make sure you intall tendo using pip:
 
 > sudo pip install tendo
+
+then bluepy directly from git (installing directly from pip can lead to some issues): 
+
 > sudo pip install git+https://github.com/IanHarvey/bluepy.git
 
 after this edit your autostart script by using this command:
