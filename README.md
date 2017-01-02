@@ -3,7 +3,8 @@ This is a real-time heart-beat monitoring application intended for use with a ra
 
 To run this application make sure you intall bluepy and tendo using pip:
 
-> sudo pip install bluepy tendo
+> sudo pip install tendo
+> sudo pip install git+https://github.com/IanHarvey/bluepy.git
 
 after this edit your autostart script by using this command:
 
