@@ -69,7 +69,11 @@ while True:
         if hb != 0:
             with open('/home/pi/hb.txt', 'w') as f:
                 f.write('{}'.format(hb))
+        else:
+            hrm = heartMonitor("00:22:D0:2C:13:7E")
+            hrm.startMonitor()
     except Exception as e:
+        print e
         if read != "Booting":
             hrm = heartMonitor("00:22:D0:2C:13:7E")
             hrm.startMonitor()
